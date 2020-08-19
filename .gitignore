@@ -1,3 +1,4 @@
+# Forked spacemacs to allow version control of certain hidden data etc
 auto-save-list/
 elpa/
 export/
@@ -6,7 +7,16 @@ eproject.lst
 .smex-items
 \#*
 .places
-.cache
+# This is where layouts are kept, so have to hide each folder in cache individually
+# .cache
+.cache/auto-save
+.cache/rollback
+.cache/quelpa
+.cache/request
+.cache/transient
+.cache/url
+.cache/savehist
+.cache/spacemacs-buffer.el
 /eww-bookmarks
 eshell/history
 .emacs.desktop
@@ -46,10 +56,10 @@ python-*-docs-html
 /recentf
 .mc-lists.el
 transient/
-
+# Want to version private directory
 # Private directory
-private/
-!private/README.md
-!private/snippets/README.md
-!private/local/README.md
+# private/
+# !private/README.md
+# !private/snippets/README.md
+# !private/local/README.md
 /games/
