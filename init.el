@@ -40,6 +40,8 @@
     (spacemacs-buffer/display-startup-note)
     (spacemacs/setup-startup-hook)
     (spacemacs/dump-eval-delayed-functions)
+    (beacon-mode)
+    (require 'revive)
     (when (and dotspacemacs-enable-server (not (spacemacs-is-dumping-p)))
       (require 'server)
       (when dotspacemacs-server-socket-dir
